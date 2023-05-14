@@ -13,7 +13,16 @@ To execute the project, it is necessary to run the commands listed below.
 
 ## Development Setup
 run the following commands:
+```
+flutter pub get
+flutter run
+```
 
-`flutter pub get
-\n
-flutter run`
+#App Main Sections completed
+- Splash Screen
+- Welcome Screen
+- Login Page 
+- Signup Page
+- Forgot Password Page
+- OTP Verification Page
+....... further updates loading ........
