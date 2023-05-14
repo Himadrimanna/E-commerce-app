@@ -1,6 +1,6 @@
 # e_cart - Online shooping app using flutter with getx
-![image](https://github.com/Himadrimanna/E-commerce-app/assets/91056721/a6aa1706-ee23-4e35-aaeb-6a338c158d3d)
 
+![Untitled-1](https://github.com/Himadrimanna/E-commerce-app/assets/91056721/0bcde484-f67a-4972-83e0-665b8dcdbcfe)
 
 # Overview 
 e_cart is a comprehensive application template for an online shopping platform. Initally it is in development stage, I will push the further updates regularly as much I complete in a day. This application will  equipped with a wide range of features to enhance user experience, such as a user authentication page for logging in or registering a new account, a homepage for browsing all available products, a detailed product page for viewing essential product information such as prices and descriptions, and a search page for easily locating favorite products.
