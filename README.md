@@ -15,4 +15,5 @@ To execute the project, it is necessary to run the commands listed below.
 run the following commands:
 
 `flutter pub get
+\n
 flutter run`
