@@ -1,4 +1,5 @@
 # e_cart - Online shooping app using flutter with getx
+![image](https://github.com/Himadrimanna/E-commerce-app/assets/91056721/a6aa1706-ee23-4e35-aaeb-6a338c158d3d)
 
 
 # Overview 
