@@ -1,6 +1,5 @@
-# e_cart
+# e_cart - Online shooping app using flutter with getx
 
-A new Flutter project.
 
 ## Getting Started
 
