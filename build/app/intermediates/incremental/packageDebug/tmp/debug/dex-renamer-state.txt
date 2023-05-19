@@ -1,4 +1,16 @@
-#Sun May 14 11:27:32 IST 2023
-base.0=D\:\\MINI PROJECT\\ECART\\e_cart\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+#Fri May 19 22:48:41 IST 2023
+base.0=D\:\\MINI PROJECT\\ECART\\e_cart\\build\\app\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=D\:\\MINI PROJECT\\ECART\\e_cart\\build\\app\\intermediates\\dex\\debug\\mergeLibDexDebug\\0\\classes.dex
+base.2=D\:\\MINI PROJECT\\ECART\\e_cart\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.3=D\:\\MINI PROJECT\\ECART\\e_cart\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\13\\classes.dex
+base.4=D\:\\MINI PROJECT\\ECART\\e_cart\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
 path.0=classes.dex
+path.1=0/classes.dex
+path.2=0/classes.dex
+path.3=13/classes.dex
+path.4=1/classes.dex
 renamed.0=classes.dex
+renamed.1=classes2.dex
+renamed.2=classes3.dex
+renamed.3=classes4.dex
+renamed.4=classes5.dex

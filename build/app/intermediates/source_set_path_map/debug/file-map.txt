@@ -1,13 +1,20 @@
-com.example.e_cart.app-jetified-window-java-1.0.0-beta04-0 C:\Users\himad\.gradle\caches\transforms-3\006d93cd422dbc43e89591147c2de572\transformed\jetified-window-java-1.0.0-beta04\res
-com.example.e_cart.app-core-1.6.0-1 C:\Users\himad\.gradle\caches\transforms-3\4ca28c4a71705f8a687c69dda140a277\transformed\core-1.6.0\res
-com.example.e_cart.app-jetified-annotation-experimental-1.1.0-2 C:\Users\himad\.gradle\caches\transforms-3\8965c941cf4bee4d72541b965c7c9d39\transformed\jetified-annotation-experimental-1.1.0\res
-com.example.e_cart.app-jetified-window-1.0.0-beta04-3 C:\Users\himad\.gradle\caches\transforms-3\dee59bb480020f42d53c2ea15e4501f7\transformed\jetified-window-1.0.0-beta04\res
-com.example.e_cart.app-debug-4 D:\MINI PROJECT\ECART\e_cart\android\app\src\debug\res
-com.example.e_cart.app-main-5 D:\MINI PROJECT\ECART\e_cart\android\app\src\main\res
-com.example.e_cart.app-pngs-6 D:\MINI PROJECT\ECART\e_cart\build\app\generated\res\pngs\debug
-com.example.e_cart.app-resValues-7 D:\MINI PROJECT\ECART\e_cart\build\app\generated\res\resValues\debug
-com.example.e_cart.app-rs-8 D:\MINI PROJECT\ECART\e_cart\build\app\generated\res\rs\debug
-com.example.e_cart.app-mergeDebugResources-9 D:\MINI PROJECT\ECART\e_cart\build\app\intermediates\incremental\debug\mergeDebugResources\merged.dir
-com.example.e_cart.app-mergeDebugResources-10 D:\MINI PROJECT\ECART\e_cart\build\app\intermediates\incremental\debug\mergeDebugResources\stripped.dir
-com.example.e_cart.app-merged_res-11 D:\MINI PROJECT\ECART\e_cart\build\app\intermediates\merged_res\debug
-com.example.e_cart.app-packaged_res-12 D:\MINI PROJECT\ECART\e_cart\build\path_provider_android\intermediates\packaged_res\debug
+com.example.e_cart.app-jetified-firebase-common-20.3.2-0 C:\Users\himad\.gradle\caches\transforms-3\026de80ea9d0b63bfc94ec9a10c1d73c\transformed\jetified-firebase-common-20.3.2\res
+com.example.e_cart.app-core-1.6.0-1 C:\Users\himad\.gradle\caches\transforms-3\1141b72fb8be4e566e7814849b1aa3a2\transformed\core-1.6.0\res
+com.example.e_cart.app-jetified-window-1.0.0-beta04-2 C:\Users\himad\.gradle\caches\transforms-3\40ff8c014bc3b03149787e1d45a42dea\transformed\jetified-window-1.0.0-beta04\res
+com.example.e_cart.app-jetified-play-services-base-17.1.0-3 C:\Users\himad\.gradle\caches\transforms-3\87bf304c2225a9e8d147333df4df4087\transformed\jetified-play-services-base-17.1.0\res
+com.example.e_cart.app-jetified-annotation-experimental-1.1.0-4 C:\Users\himad\.gradle\caches\transforms-3\a6362f1fb79a6245a27920bb99ff99c3\transformed\jetified-annotation-experimental-1.1.0\res
+com.example.e_cart.app-jetified-play-services-basement-18.1.0-5 C:\Users\himad\.gradle\caches\transforms-3\ad3fb7e0e58165c0e3c87f8f0d79631f\transformed\jetified-play-services-basement-18.1.0\res
+com.example.e_cart.app-browser-1.4.0-6 C:\Users\himad\.gradle\caches\transforms-3\c1463af6cb467bf02a2c891016443d37\transformed\browser-1.4.0\res
+com.example.e_cart.app-jetified-window-java-1.0.0-beta04-7 C:\Users\himad\.gradle\caches\transforms-3\ed438543a8e9ffa856a2b095c92f0ea3\transformed\jetified-window-java-1.0.0-beta04\res
+com.example.e_cart.app-debug-8 D:\MINI PROJECT\ECART\e_cart\android\app\src\debug\res
+com.example.e_cart.app-main-9 D:\MINI PROJECT\ECART\e_cart\android\app\src\main\res
+com.example.e_cart.app-google-services-10 D:\MINI PROJECT\ECART\e_cart\build\app\generated\res\google-services\debug
+com.example.e_cart.app-pngs-11 D:\MINI PROJECT\ECART\e_cart\build\app\generated\res\pngs\debug
+com.example.e_cart.app-resValues-12 D:\MINI PROJECT\ECART\e_cart\build\app\generated\res\resValues\debug
+com.example.e_cart.app-rs-13 D:\MINI PROJECT\ECART\e_cart\build\app\generated\res\rs\debug
+com.example.e_cart.app-mergeDebugResources-14 D:\MINI PROJECT\ECART\e_cart\build\app\intermediates\incremental\debug\mergeDebugResources\merged.dir
+com.example.e_cart.app-mergeDebugResources-15 D:\MINI PROJECT\ECART\e_cart\build\app\intermediates\incremental\debug\mergeDebugResources\stripped.dir
+com.example.e_cart.app-merged_res-16 D:\MINI PROJECT\ECART\e_cart\build\app\intermediates\merged_res\debug
+com.example.e_cart.app-packaged_res-17 D:\MINI PROJECT\ECART\e_cart\build\firebase_auth\intermediates\packaged_res\debug
+com.example.e_cart.app-packaged_res-18 D:\MINI PROJECT\ECART\e_cart\build\firebase_core\intermediates\packaged_res\debug
+com.example.e_cart.app-packaged_res-19 D:\MINI PROJECT\ECART\e_cart\build\path_provider_android\intermediates\packaged_res\debug

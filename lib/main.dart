@@ -1,10 +1,12 @@
-import 'package:e_cart/screens/splash_screen.dart';
+import 'package:e_cart/screens/authentication/authentication_repo.dart';
+import 'package:e_cart/screens/welcome.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  Firebase.initializeApp();
+  Firebase.initializeApp().then((value) => Get.put(AuthenticationRepo()));
   runApp(const MyApp());
 }
 
@@ -14,12 +16,12 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       title: 'e_cart',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: SplashScreen(),
+      home: Welcome(),
     );
   }
 }
