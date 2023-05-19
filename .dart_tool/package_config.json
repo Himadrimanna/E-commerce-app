@@ -20,6 +20,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "args",
+      "rootUri": "file:///C:/Users/himad/AppData/Local/Pub/Cache/hosted/pub.dev/args-2.4.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
       "name": "async",
       "rootUri": "file:///C:/Users/himad/AppData/Local/Pub/Cache/hosted/pub.dev/async-2.10.0",
       "packageUri": "lib/",
@@ -60,6 +66,12 @@
       "rootUri": "file:///C:/Users/himad/AppData/Local/Pub/Cache/hosted/pub.dev/crypto-3.0.2",
       "packageUri": "lib/",
       "languageVersion": "2.14"
+    },
+    {
+      "name": "csslib",
+      "rootUri": "file:///C:/Users/himad/AppData/Local/Pub/Cache/hosted/pub.dev/csslib-0.17.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "cupertino_icons",
@@ -134,6 +146,12 @@
       "languageVersion": "2.17"
     },
     {
+      "name": "flutter_native_splash",
+      "rootUri": "file:///C:/Users/himad/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_native_splash-2.2.19",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
       "name": "flutter_otp_text_field",
       "rootUri": "file:///C:/Users/himad/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_otp_text_field-1.1.1",
       "packageUri": "lib/",
@@ -164,6 +182,12 @@
       "languageVersion": "2.14"
     },
     {
+      "name": "html",
+      "rootUri": "file:///C:/Users/himad/AppData/Local/Pub/Cache/hosted/pub.dev/html-0.15.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "http",
       "rootUri": "file:///C:/Users/himad/AppData/Local/Pub/Cache/hosted/pub.dev/http-0.13.6",
       "packageUri": "lib/",
@@ -174,6 +198,12 @@
       "rootUri": "file:///C:/Users/himad/AppData/Local/Pub/Cache/hosted/pub.dev/http_parser-4.0.2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "image",
+      "rootUri": "file:///C:/Users/himad/AppData/Local/Pub/Cache/hosted/pub.dev/image-4.0.17",
+      "packageUri": "lib/",
+      "languageVersion": "2.15"
     },
     {
       "name": "js",
@@ -266,6 +296,12 @@
       "languageVersion": "2.17"
     },
     {
+      "name": "petitparser",
+      "rootUri": "file:///C:/Users/himad/AppData/Local/Pub/Cache/hosted/pub.dev/petitparser-5.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
       "name": "platform",
       "rootUri": "file:///C:/Users/himad/AppData/Local/Pub/Cache/hosted/pub.dev/platform-3.1.0",
       "packageUri": "lib/",
@@ -338,6 +374,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "universal_io",
+      "rootUri": "file:///C:/Users/himad/AppData/Local/Pub/Cache/hosted/pub.dev/universal_io-2.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.15"
+    },
+    {
       "name": "vector_math",
       "rootUri": "file:///C:/Users/himad/AppData/Local/Pub/Cache/hosted/pub.dev/vector_math-2.1.4",
       "packageUri": "lib/",
@@ -356,13 +398,25 @@
       "languageVersion": "2.17"
     },
     {
+      "name": "xml",
+      "rootUri": "file:///C:/Users/himad/AppData/Local/Pub/Cache/hosted/pub.dev/xml-6.2.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "yaml",
+      "rootUri": "file:///C:/Users/himad/AppData/Local/Pub/Cache/hosted/pub.dev/yaml-3.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
       "name": "e_cart",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.19"
     }
   ],
-  "generated": "2023-05-19T17:25:50.891775Z",
+  "generated": "2023-05-19T17:42:18.345881Z",
   "generator": "pub",
   "generatorVersion": "2.19.6"
 }

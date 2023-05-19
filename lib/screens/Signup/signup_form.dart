@@ -104,7 +104,11 @@ class _SignupFormState extends State<SignupForm> {
                   width: double.infinity,
                   child: ElevatedButton(
                       onPressed: () {
-                        if (_formKey.currentState!.validate()) {}
+                        if (_formKey.currentState!.validate()) {
+                          Signupcontroller.instance.registeruser(
+                              controller.email.text.trim(),
+                              controller.password.text.trim());
+                        }
                       },
                       style: ElevatedButton.styleFrom(
                           elevation: 0,

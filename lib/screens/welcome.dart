@@ -10,7 +10,7 @@ class Welcome extends StatelessWidget {
   Widget build(BuildContext context) {
     var height = MediaQuery.of(context).size.height;
     return Scaffold(
-      backgroundColor: Colors.grey[300],
+      backgroundColor: Color.fromRGBO(224, 224, 224, 1),
       body: Container(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
