@@ -18,13 +18,13 @@ run the following commands:
 flutter pub get
 flutter run
 ```
-#Daily updates                                                                                                                                                     
+# Daily updates                                                                                                                                                     
 - Login done                                                                                                                                                       
 - Signup done                                                                                                                                                     
 - Email verification in progress                                                                                                                                   
 - Google Authentication in progress
 
-#App Main Sections completed
+# App Main Sections completed
 - Splash Screen
 - Welcome Screen
 - Login Page 
