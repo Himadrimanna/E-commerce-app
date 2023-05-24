@@ -87,8 +87,7 @@ class _MailState extends State<Mail> {
                                         Navigator.of(context)
                                             .push(MaterialPageRoute(
                                                 builder: (context) => Otp(
-                                                      username:
-                                                          sampledata1.text,
+                                                      username: '',
                                                     )));
                                       }
                                     },

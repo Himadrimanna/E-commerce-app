@@ -86,10 +86,10 @@ class _PhoneState extends State<Phone> {
                                       if (_formKey.currentState!.validate()) {
                                         Navigator.of(context)
                                             .push(MaterialPageRoute(
-                                                builder: (context) => Otp(
-                                                      username:
-                                                          sampledata1.text,
-                                                    )));
+                                          builder: (context) => Otp(
+                                            username: '',
+                                          ),
+                                        ));
                                       }
                                       Map<String, String> data = {
                                         "field": sampledata1.text

@@ -1,7 +1,9 @@
 import 'package:e_cart/screens/Login/login.dart';
 import 'package:e_cart/screens/Signup/signup.dart';
+import 'package:e_cart/screens/route.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:get/get.dart';
 
 class Welcome extends StatelessWidget {
   const Welcome({super.key});
@@ -55,8 +57,9 @@ class Welcome extends StatelessWidget {
                   child: Center(
                     child: OutlinedButton(
                         onPressed: () {
-                          Navigator.of(context).push(MaterialPageRoute(
-                              builder: (context) => Loginpage()));
+                          // Navigator.of(context).push(MaterialPageRoute(
+                          //     builder: (context) => Loginpage()));
+                          Navigator.push(context, loginRoute());
                         },
                         style: OutlinedButton.styleFrom(
                             shape: RoundedRectangleBorder(
@@ -78,8 +81,11 @@ class Welcome extends StatelessWidget {
                   child: Center(
                     child: ElevatedButton(
                         onPressed: () {
-                          Navigator.of(context).push(MaterialPageRoute(
-                              builder: (context) => Signup()));
+                          // Navigator.of(context).push(MaterialPageRoute(
+                          //     builder: (context) => Signup()));
+                          // Future.delayed(const Duration(milliseconds: 2000))
+                          //     .then((_){
+                          Navigator.push(context, createRoute());
                         },
                         style: ElevatedButton.styleFrom(
                             elevation: 0,

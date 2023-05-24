@@ -8,6 +8,7 @@ class Otp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var otp;
     return Scaffold(
       backgroundColor: Colors.grey[300],
       body: Container(
@@ -43,10 +44,33 @@ class Otp extends StatelessWidget {
               height: 20,
             ),
             OtpTextField(
+              mainAxisAlignment: MainAxisAlignment.center,
               numberOfFields: 6,
               fillColor: Colors.black.withOpacity(0.1),
               filled: true,
             ),
+            SizedBox(
+              height: 40,
+            ),
+            SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                        elevation: 0,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(25.0)),
+                        //foregroundColor: Colors.blue,
+                        backgroundColor: Colors.black,
+                        side: BorderSide(color: Colors.black),
+                        padding:
+                            EdgeInsets.symmetric(vertical: 15, horizontal: 30)),
+                    child: Text("Next".toUpperCase(),
+                        style: GoogleFonts.poppins(
+                            textStyle: Theme.of(context).textTheme.bodyText1,
+                            fontWeight: FontWeight.w500,
+                            color: Colors.white,
+                            fontSize: 15)))),
           ],
         ),
       ),

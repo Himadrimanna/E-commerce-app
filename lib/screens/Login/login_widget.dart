@@ -1,6 +1,7 @@
 import 'package:e_cart/screens/Login/forgot%20password/forgot_password.dart';
-import 'package:e_cart/screens/Main-App/frontpage.dart';
+import 'package:e_cart/screens/Login/login_controller.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class LoginForm extends StatefulWidget {
@@ -14,6 +15,8 @@ class _LoginFormState extends State<LoginForm> {
   bool _obscureText = true;
   @override
   Widget build(BuildContext context) {
+    final controller = Get.put(Logincontroller());
+    final _formKey = GlobalKey<FormState>();
     return Form(
         child: Container(
       padding: EdgeInsets.symmetric(vertical: 20),
@@ -21,6 +24,7 @@ class _LoginFormState extends State<LoginForm> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           TextFormField(
+            controller: controller.email,
             decoration: InputDecoration(
                 prefixIcon: Icon(
                   Icons.email_rounded,
@@ -29,13 +33,14 @@ class _LoginFormState extends State<LoginForm> {
                 labelText: "Email",
                 hintText: "Email",
                 border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(25),
                 )),
           ),
           SizedBox(
             height: 10,
           ),
           TextFormField(
+            controller: controller.password,
             decoration: InputDecoration(
                 prefixIcon: Icon(
                   Icons.fingerprint_rounded,
@@ -44,7 +49,7 @@ class _LoginFormState extends State<LoginForm> {
                 labelText: "Password",
                 hintText: "Password",
                 border:
-                    OutlineInputBorder(borderRadius: BorderRadius.circular(5)),
+                    OutlineInputBorder(borderRadius: BorderRadius.circular(25)),
                 suffixIcon: IconButton(
                   onPressed: () {
                     setState(() {
@@ -92,13 +97,12 @@ class _LoginFormState extends State<LoginForm> {
               width: double.infinity,
               child: ElevatedButton(
                   onPressed: () {
-                    Navigator.of(context).pushReplacement(
-                        MaterialPageRoute(builder: (context) => Frontpage()));
+                    controller.onLogin();
                   },
                   style: ElevatedButton.styleFrom(
                       elevation: 0,
                       shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10.0)),
+                          borderRadius: BorderRadius.circular(25.0)),
                       //foregroundColor: Colors.blue,
                       backgroundColor: Colors.black,
                       side: BorderSide(color: Colors.black),
