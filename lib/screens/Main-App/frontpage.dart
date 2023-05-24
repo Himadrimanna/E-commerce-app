@@ -2,7 +2,9 @@ import 'package:e_cart/screens/authentication/authentication_repo.dart';
 import 'package:flutter/material.dart';
 
 class Frontpage extends StatelessWidget {
-  const Frontpage({super.key});
+  Frontpage({super.key});
+
+  final Authcontroller _logout = Authcontroller();
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +14,7 @@ class Frontpage extends StatelessWidget {
             child: IconButton(
           icon: Icon(Icons.person_2_rounded),
           onPressed: () {
-            AuthenticationRepo.instance.logout();
+            _logout.logOut();
           },
         )),
       ),
