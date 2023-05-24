@@ -1,17 +1,3 @@
-// // import 'package:e_cart/screens/authentication/authentication_repo.dart';
-// // import 'package:flutter/widgets.dart';
-// // import 'package:get/get.dart';
-
-// // class Logincontroller extends GetxController {
-// //   static Logincontroller get instance => Get.find();
-
-// //   final email = TextEditingController();
-// //   final password = TextEditingController();
-
-// //   void loginuser(String email, String password) {
-// //     AuthenticationRepo.instance.loginUserWithEmailAndPassword(email, password);
-// //   }
-// // }
 
 import 'package:e_cart/screens/Main-App/frontpage.dart';
 import 'package:e_cart/screens/authentication/authentication_repo.dart';
