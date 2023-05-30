@@ -1,4 +1,5 @@
 import 'package:e_cart/screens/Signup/signup_controller.dart';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -28,6 +29,7 @@ class _SignupFormState extends State<SignupForm> {
   @override
   Widget build(BuildContext context) {
     final controller = Get.put(Signupcontroller());
+
     final _formKey = GlobalKey<FormState>();
 
     return Form(
@@ -159,9 +161,6 @@ class _SignupFormState extends State<SignupForm> {
                   child: ElevatedButton(
                       onPressed: () {
                         if (_formKey.currentState!.validate()) {
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            const SnackBar(content: Text('Registered')),
-                          );
                           controller.onCreateAccount();
                         }
                       },

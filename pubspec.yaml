@@ -48,6 +48,7 @@ dependencies:
   country_picker: ^2.0.20
   cloud_firestore: ^4.7.1
   shared_preferences: ^2.1.1
+  line_awesome_flutter: ^2.0.0
 
 dev_dependencies:
   flutter_test:

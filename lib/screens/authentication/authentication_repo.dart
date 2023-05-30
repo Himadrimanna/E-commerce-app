@@ -1,35 +1,27 @@
 
 import 'package:e_cart/screens/Main-App/frontpage.dart';
 import 'package:e_cart/screens/authentication/exceptions.dart';
-import 'package:e_cart/screens/indicator/indicator.dart';
 import 'package:e_cart/screens/welcome.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+
 import 'package:get/get.dart';
 
 class Authcontroller extends GetxController {
   static Authcontroller instance = Get.find();
-  late Rx<User?> _firebaseuser;
+  late Rx<User?> firebaseuser;
   FirebaseAuth auth = FirebaseAuth.instance;
 
   @override
   void onReady() {
     super.onReady();
     Future.delayed(const Duration(milliseconds: 500));
-    _firebaseuser = Rx<User?>(auth.currentUser);
-    _firebaseuser.bindStream(auth.userChanges());
-    ever(_firebaseuser, _initialScreen);
+    firebaseuser = Rx<User?>(auth.currentUser);
+    firebaseuser.bindStream(auth.userChanges());
+    ever(firebaseuser, _initialScreen);
   }
 
   _initialScreen(User? user) {
-    if (user == null) {
-      Indicator.showLoading();
-      print('Redirect to Welcome page');
-      Get.offAll(() => Welcome());
-    } else {
-      Indicator.closeLoading();
-      print('Redirect to front page');
-      Get.offAll(() => Frontpage());
-    }
+    user == null ? Get.offAll(() => Welcome()) : Get.offAll(() => Frontpage());
   }
 
   Future<void> register(String email, String password) async {

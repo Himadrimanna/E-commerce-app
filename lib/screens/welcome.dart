@@ -1,9 +1,6 @@
-import 'package:e_cart/screens/Login/login.dart';
-import 'package:e_cart/screens/Signup/signup.dart';
 import 'package:e_cart/screens/route.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:get/get.dart';
 
 class Welcome extends StatelessWidget {
   const Welcome({super.key});
@@ -12,7 +9,7 @@ class Welcome extends StatelessWidget {
   Widget build(BuildContext context) {
     var height = MediaQuery.of(context).size.height;
     return Scaffold(
-      backgroundColor: Color.fromRGBO(224, 224, 224, 1),
+      backgroundColor: Colors.grey[300],
       body: Container(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -30,9 +27,10 @@ class Welcome extends StatelessWidget {
                 Text(
                   "Welcome to your beloved E-cart",
                   style: GoogleFonts.poppins(
-                      textStyle: Theme.of(context).textTheme.headline6,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20),
+                    textStyle: Theme.of(context).textTheme.headline5,
+                    fontWeight: FontWeight.bold,
+                    // fontSize: 20
+                  ),
                 ),
                 SizedBox(
                   height: 15,
@@ -45,7 +43,8 @@ class Welcome extends StatelessWidget {
                     textAlign: TextAlign.center,
                     style: GoogleFonts.poppins(
                         textStyle: Theme.of(context).textTheme.bodyText2,
-                        fontWeight: FontWeight.w500),
+                        fontWeight: FontWeight.w500,
+                        fontSize: 15),
                   ),
                 ),
               ],
@@ -62,6 +61,7 @@ class Welcome extends StatelessWidget {
                           Navigator.push(context, loginRoute());
                         },
                         style: OutlinedButton.styleFrom(
+                            shadowColor: Colors.yellow[600],
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(10.0)),
                             foregroundColor: Colors.black,
