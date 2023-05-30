@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lottie/lottie.dart';
+
 import 'package:e_cart/screens/route.dart';
 
 class SplashScreen extends StatelessWidget {
