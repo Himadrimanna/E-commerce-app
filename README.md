@@ -21,6 +21,7 @@ flutter run
 # Daily updates                                                                                                                                                     
 - Login done                                                                                                                                                       
 - Signup done  
+- profile complete
 - Google Authentication in progress                                                                                                                                                                                                                     
 
 # App Main Sections completed
