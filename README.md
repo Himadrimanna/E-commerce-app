@@ -20,9 +20,8 @@ flutter run
 ```
 # Daily updates                                                                                                                                                     
 - Login done                                                                                                                                                       
-- Signup done                                                                                                                                                     
-- Email verification in progress                                                                                                                                   
-- Google Authentication in progress
+- Signup done  
+- Google Authentication in progress                                                                                                                                                                                                                     
 
 # App Main Sections completed
 - Splash Screen
