@@ -38,10 +38,8 @@ packages:
     description:
       name: async
       sha256: "947bfcf187f74dbc5e146c9eb9c0f10c9f8b30743e341481c1e2ed3ecc18c20c"
-      sha256: "947bfcf187f74dbc5e146c9eb9c0f10c9f8b30743e341481c1e2ed3ecc18c20c"
       url: "https://pub.dev"
     source: hosted
-    version: "2.11.0"
     version: "2.11.0"
   boolean_selector:
     dependency: transitive
@@ -56,10 +54,8 @@ packages:
     description:
       name: characters
       sha256: "04a925763edad70e8443c99234dc3328f442e811f1d8fd1a72f1c8ad0f69a605"
-      sha256: "04a925763edad70e8443c99234dc3328f442e811f1d8fd1a72f1c8ad0f69a605"
       url: "https://pub.dev"
     source: hosted
-    version: "1.3.0"
     version: "1.3.0"
   clock:
     dependency: transitive
@@ -98,10 +94,8 @@ packages:
     description:
       name: collection
       sha256: "4a07be6cb69c84d677a6c3096fcf960cc3285a8330b4603e0d463d15d9bd934c"
-      sha256: "4a07be6cb69c84d677a6c3096fcf960cc3285a8330b4603e0d463d15d9bd934c"
       url: "https://pub.dev"
     source: hosted
-    version: "1.17.1"
     version: "1.17.1"
   convert:
     dependency: transitive
@@ -310,6 +304,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.6.7"
+  line_awesome_flutter:
+    dependency: "direct main"
+    description:
+      name: line_awesome_flutter
+      sha256: "7e1beb342895d7da40d40047d193f8ecfd494355b399dc3d92912c31ccc4d808"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.0"
   lints:
     dependency: transitive
     description:
@@ -331,10 +333,8 @@ packages:
     description:
       name: matcher
       sha256: "6501fbd55da300384b768785b83e5ce66991266cec21af89ab9ae7f5ce1c4cbb"
-      sha256: "6501fbd55da300384b768785b83e5ce66991266cec21af89ab9ae7f5ce1c4cbb"
       url: "https://pub.dev"
     source: hosted
-    version: "0.12.15"
     version: "0.12.15"
   material_color_utilities:
     dependency: transitive
@@ -349,10 +349,8 @@ packages:
     description:
       name: meta
       sha256: "3c74dbf8763d36539f114c799d8a2d87343b5067e9d796ca22b5eb8437090ee3"
-      sha256: "3c74dbf8763d36539f114c799d8a2d87343b5067e9d796ca22b5eb8437090ee3"
       url: "https://pub.dev"
     source: hosted
-    version: "1.9.1"
     version: "1.9.1"
   otp_text_field:
     dependency: "direct main"
@@ -375,10 +373,8 @@ packages:
     description:
       name: path
       sha256: "8829d8a55c13fc0e37127c29fedf290c102f4e40ae94ada574091fe0ff96c917"
-      sha256: "8829d8a55c13fc0e37127c29fedf290c102f4e40ae94ada574091fe0ff96c917"
       url: "https://pub.dev"
     source: hosted
-    version: "1.8.3"
     version: "1.8.3"
   path_provider:
     dependency: transitive
@@ -574,10 +570,8 @@ packages:
     description:
       name: test_api
       sha256: eb6ac1540b26de412b3403a163d919ba86f6a973fe6cc50ae3541b80092fdcfb
-      sha256: eb6ac1540b26de412b3403a163d919ba86f6a973fe6cc50ae3541b80092fdcfb
       url: "https://pub.dev"
     source: hosted
-    version: "0.5.1"
     version: "0.5.1"
   typed_data:
     dependency: transitive
@@ -636,5 +630,5 @@ packages:
     source: hosted
     version: "3.1.2"
 sdks:
-  dart: ">=3.0.0-0 <4.0.0"
+  dart: ">=3.0.0 <4.0.0"
   flutter: ">=3.3.0"
