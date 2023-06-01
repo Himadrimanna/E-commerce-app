@@ -22,6 +22,7 @@ flutter run
 - Login done                                                                                                                                                       
 - Signup done  
 - profile complete
+- Home Screen done
 - Google Authentication in progress                                                                                                                                                                                                                     
 
 # App Main Sections completed
