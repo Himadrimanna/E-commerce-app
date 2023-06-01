@@ -30,27 +30,29 @@ class Frontpage extends StatelessWidget {
       CartScreen(),
       ProfileScreen(),
     ];
-    return Scaffold(
-      backgroundColor: Colors.grey[400],
-      body: SafeArea(
-        child: Column(
-          children: [
-            Obx(() => Expanded(
-                child: navBody.elementAt(controller.currentnavIndex.value))),
-          ],
+    return SafeArea(
+      child: Scaffold(
+        backgroundColor: Colors.grey[400],
+        body: SafeArea(
+          child: Column(
+            children: [
+              Obx(() => Expanded(
+                  child: navBody.elementAt(controller.currentnavIndex.value))),
+            ],
+          ),
         ),
-      ),
-      bottomNavigationBar: Obx(
-        () => BottomNavigationBar(
-          currentIndex: controller.currentnavIndex.value,
-          selectedItemColor: Colors.black,
-          selectedLabelStyle: TextStyle(fontWeight: FontWeight.w600),
-          type: BottomNavigationBarType.fixed,
-          backgroundColor: Colors.white,
-          items: navbarItem,
-          onTap: (value) {
-            controller.currentnavIndex.value = value;
-          },
+        bottomNavigationBar: Obx(
+          () => BottomNavigationBar(
+            currentIndex: controller.currentnavIndex.value,
+            selectedItemColor: Colors.black,
+            selectedLabelStyle: TextStyle(fontWeight: FontWeight.w600),
+            type: BottomNavigationBarType.fixed,
+            backgroundColor: Colors.white,
+            items: navbarItem,
+            onTap: (value) {
+              controller.currentnavIndex.value = value;
+            },
+          ),
         ),
       ),
     );
