@@ -1,6 +1,10 @@
 import 'package:e_cart/screens/Main-App/common/buttons.dart';
+import 'package:e_cart/screens/Main-App/list.dart';
 import 'package:e_cart/screens/authentication/authentication_repo.dart';
+import 'package:e_cart/screens/complete%20profile/profile_controller.dart';
+import 'package:e_cart/screens/complete%20profile/user_model.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:velocity_x/velocity_x.dart';
 
@@ -9,23 +13,13 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final controller = Get.put(ProfileController());
     final Authcontroller _logout = Authcontroller();
     var height = MediaQuery.of(context).size.height;
     var width = MediaQuery.of(context).size.width;
-    var sliderlist = [
-      "assets/images/imgslider1.jpg",
-      "assets/images/imgslider2.jpg",
-      "assets/images/imgslider3.jpg",
-      "assets/images/imgslider4.jpg"
-    ];
-    var secsliderlist = [
-      "assets/images/secslider1.jpg",
-      "assets/images/secslider2.jpg",
-      "assets/images/secslider3.jpg",
-      "assets/images/secslider4.jpg"
-    ];
+
     return Scaffold(
-      backgroundColor: Colors.grey[300],
+      backgroundColor: Colors.grey[400],
       body: Container(
         padding: EdgeInsets.all(12),
         child: Column(
@@ -46,6 +40,51 @@ class HomeScreen extends StatelessWidget {
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(25))),
                 )),
+            SizedBox(
+              height: 10,
+            ),
+            FutureBuilder(
+              future: controller.getUserDetails(),
+              builder: (context, snapshot) {
+                if (snapshot.connectionState == ConnectionState.done) {
+                  if (snapshot.hasData) {
+                    UserModel userdata = snapshot.data as UserModel;
+                    return Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Icon(
+                          Icons.person_2_rounded,
+                          size: 22,
+                        ),
+                        SizedBox(
+                          width: 5,
+                        ),
+                        Align(
+                          alignment: Alignment.topLeft,
+                          child: Text(
+                            "Hello" + " " + userdata.fullname,
+                            style: GoogleFonts.poppins(
+                                fontWeight: FontWeight.w400,
+                                color: Colors.grey[900],
+                                fontSize: 16),
+                            textAlign: TextAlign.left,
+                          ),
+                        ),
+                      ],
+                    );
+                  } else if (snapshot.hasError) {
+                    return Center(child: Text(snapshot.error.toString()));
+                  } else {
+                    return Center(child: Text('Something went wrong'));
+                  }
+                } else {
+                  return Center();
+                }
+              },
+            ),
             SizedBox(
               height: 10,
             ),
@@ -141,14 +180,109 @@ class HomeScreen extends StatelessWidget {
                     SizedBox(
                       height: 20,
                     ),
-                    Text(
-                      'Featured Categories',
-                      style: GoogleFonts.poppins(
-                          textStyle: Theme.of(context).textTheme.headline5,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.black),
-                      textAlign: TextAlign.left,
+                    Align(
+                      alignment: Alignment.bottomLeft,
+                      child: Text(
+                        'Top Clothing Categories',
+                        style: GoogleFonts.poppins(
+                            textStyle: Theme.of(context).textTheme.headline6,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.grey[900]),
+                        textAlign: TextAlign.left,
+                      ),
                     ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Row(
+                        children: List.generate(
+                            3,
+                            (index) => Column(
+                                  children: [
+                                    featuredButton(
+                                        icon: featureimage1[index],
+                                        tittle: featuretittle1[index]),
+                                    SizedBox(
+                                      height: 10,
+                                    ),
+                                    featuredButton(
+                                        icon: featureimage2[index],
+                                        tittle: featuretittle2[index]),
+                                  ],
+                                )).toList(),
+                      ),
+                    ),
+
+                    SizedBox(
+                      height: 20,
+                    ),
+
+                    //************ FEATURES pRODUCT********** */
+
+                    Container(
+                      width: double.infinity,
+                      decoration: BoxDecoration(
+                          color: Color.fromRGBO(202, 174, 13, 0.992),
+                          borderRadius: BorderRadius.circular(10)),
+                      padding: EdgeInsets.all(12),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'Feature Products',
+                            style: GoogleFonts.poppins(
+                                textStyle:
+                                    Theme.of(context).textTheme.headline6,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white),
+                          ),
+                          SizedBox(
+                            height: 20,
+                          ),
+                          SingleChildScrollView(
+                              scrollDirection: Axis.horizontal,
+                              child: Row(
+                                children: List.generate(
+                                    6,
+                                    (index) => Column(
+                                          children: [
+                                            featuredProductButton(
+                                                icon:
+                                                    featureproductimage[index],
+                                                tittle: featureproduct[index],
+                                                price:
+                                                    featureproductprize[index]),
+                                          ],
+                                        )).toList(),
+                              )),
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    VxSwiper.builder(
+                        aspectRatio: 20 / 12,
+                        autoPlay: true,
+                        height: 200,
+                        enlargeCenterPage: true,
+                        autoPlayCurve: Curves.fastOutSlowIn,
+                        autoPlayInterval: Duration(seconds: 3),
+                        autoPlayAnimationDuration: Duration(milliseconds: 800),
+                        itemCount: thdsliderlist.length,
+                        itemBuilder: (context, index) {
+                          return Image.asset(
+                            thdsliderlist[index],
+                            fit: BoxFit.fill,
+                          )
+                              .box
+                              .rounded
+                              .clip(Clip.antiAlias)
+                              .margin(EdgeInsets.symmetric(horizontal: 4))
+                              .make();
+                        }),
                     IconButton(
                       icon: Icon(Icons.person_2_rounded),
                       onPressed: () {

@@ -1,6 +1,6 @@
 import 'package:e_cart/screens/authentication/authentication_repo.dart';
 import 'package:e_cart/screens/splash_screen.dart';
-import 'package:e_cart/screens/welcome.dart';
+
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

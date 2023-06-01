@@ -1,6 +1,6 @@
 import 'package:e_cart/screens/Main-App/frontpage.dart';
 import 'package:e_cart/screens/authentication/exceptions.dart';
-import 'package:e_cart/screens/indicator/indicator.dart';
+
 import 'package:e_cart/screens/splash_screen.dart';
 import 'package:e_cart/screens/welcome.dart';
 import 'package:firebase_auth/firebase_auth.dart';
