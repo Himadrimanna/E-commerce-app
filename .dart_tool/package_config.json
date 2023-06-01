@@ -32,6 +32,12 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "auto_size_text_pk",
+      "rootUri": "file:///C:/Users/himad/AppData/Local/Pub/Cache/hosted/pub.dev/auto_size_text_pk-3.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "boolean_selector",
       "rootUri": "file:///C:/Users/himad/AppData/Local/Pub/Cache/hosted/pub.dev/boolean_selector-2.1.1",
       "packageUri": "lib/",
@@ -228,6 +234,12 @@
       "rootUri": "file:///C:/Users/himad/AppData/Local/Pub/Cache/hosted/pub.dev/image-4.0.17",
       "packageUri": "lib/",
       "languageVersion": "2.15"
+    },
+    {
+      "name": "intl",
+      "rootUri": "file:///C:/Users/himad/AppData/Local/Pub/Cache/hosted/pub.dev/intl-0.18.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "js",
@@ -458,6 +470,18 @@
       "languageVersion": "2.14"
     },
     {
+      "name": "velocity_x",
+      "rootUri": "file:///C:/Users/himad/AppData/Local/Pub/Cache/hosted/pub.dev/velocity_x-4.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "vxstate",
+      "rootUri": "file:///C:/Users/himad/AppData/Local/Pub/Cache/hosted/pub.dev/vxstate-2.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "win32",
       "rootUri": "file:///C:/Users/himad/AppData/Local/Pub/Cache/hosted/pub.dev/win32-4.1.4",
       "packageUri": "lib/",
@@ -488,7 +512,7 @@
       "languageVersion": "2.19"
     }
   ],
-  "generated": "2023-05-30T08:47:01.568780Z",
+  "generated": "2023-05-31T10:48:34.216828Z",
   "generator": "pub",
   "generatorVersion": "3.0.2"
 }

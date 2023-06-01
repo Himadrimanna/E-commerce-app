@@ -49,6 +49,7 @@ dependencies:
   cloud_firestore: ^4.7.1
   shared_preferences: ^2.1.1
   line_awesome_flutter: ^2.0.0
+  velocity_x : ^4.1.0
 
 dev_dependencies:
   flutter_test:

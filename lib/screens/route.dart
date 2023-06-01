@@ -1,6 +1,6 @@
 import 'package:e_cart/screens/Login/login.dart';
 import 'package:e_cart/screens/Signup/signup.dart';
-import 'package:e_cart/screens/welcome.dart';
+
 import 'package:flutter/material.dart';
 
 Route createRoute() {
