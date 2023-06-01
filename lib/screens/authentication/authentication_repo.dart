@@ -1,6 +1,7 @@
-
 import 'package:e_cart/screens/Main-App/frontpage.dart';
 import 'package:e_cart/screens/authentication/exceptions.dart';
+import 'package:e_cart/screens/indicator/indicator.dart';
+import 'package:e_cart/screens/splash_screen.dart';
 import 'package:e_cart/screens/welcome.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
@@ -14,14 +15,16 @@ class Authcontroller extends GetxController {
   @override
   void onReady() {
     super.onReady();
-    Future.delayed(const Duration(milliseconds: 500));
     firebaseuser = Rx<User?>(auth.currentUser);
     firebaseuser.bindStream(auth.userChanges());
     ever(firebaseuser, _initialScreen);
   }
 
   _initialScreen(User? user) {
-    user == null ? Get.offAll(() => Welcome()) : Get.offAll(() => Frontpage());
+    Get.offAll(() => SplashScreen());
+    user == null
+        ? Get.offAll(() => const Welcome())
+        : Get.offAll(() => Frontpage());
   }
 
   Future<void> register(String email, String password) async {

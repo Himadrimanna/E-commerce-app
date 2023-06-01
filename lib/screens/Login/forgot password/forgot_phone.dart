@@ -91,9 +91,6 @@ class _PhoneState extends State<Phone> {
                                           ),
                                         ));
                                       }
-                                      Map<String, String> data = {
-                                        "field": sampledata1.text
-                                      };
                                     },
                                     style: ElevatedButton.styleFrom(
                                         elevation: 0,
