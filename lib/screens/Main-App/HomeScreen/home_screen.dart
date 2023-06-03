@@ -1,6 +1,6 @@
 import 'package:e_cart/screens/Main-App/common/buttons.dart';
 import 'package:e_cart/screens/Main-App/list.dart';
-import 'package:e_cart/screens/authentication/authentication_repo.dart';
+
 import 'package:e_cart/screens/complete%20profile/profile_controller.dart';
 import 'package:e_cart/screens/complete%20profile/user_model.dart';
 import 'package:flutter/material.dart';
@@ -14,7 +14,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final controller = Get.put(ProfileController());
-    final Authcontroller _logout = Authcontroller();
+
     var height = MediaQuery.of(context).size.height;
     var width = MediaQuery.of(context).size.width;
 
@@ -283,12 +283,6 @@ class HomeScreen extends StatelessWidget {
                               .margin(EdgeInsets.symmetric(horizontal: 4))
                               .make();
                         }),
-                    IconButton(
-                      icon: Icon(Icons.person_2_rounded),
-                      onPressed: () {
-                        _logout.logOut();
-                      },
-                    ),
                   ],
                 ),
               ),
