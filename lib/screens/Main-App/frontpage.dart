@@ -3,15 +3,13 @@ import 'package:e_cart/screens/Main-App/CategoryScreen/category_screen.dart';
 import 'package:e_cart/screens/Main-App/HomeScreen/home_screen.dart';
 import 'package:e_cart/screens/Main-App/ProfileScreen/profile_screen.dart';
 import 'package:e_cart/screens/Main-App/frontpage.controller.dart';
-import 'package:e_cart/screens/authentication/authentication_repo.dart';
-import 'package:flutter/foundation.dart';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class Frontpage extends StatelessWidget {
   Frontpage({super.key});
 
-  final Authcontroller _logout = Authcontroller();
   final controller = Get.put(FrontPageController());
   @override
   Widget build(BuildContext context) {

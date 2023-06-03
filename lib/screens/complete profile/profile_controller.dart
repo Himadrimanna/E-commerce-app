@@ -27,6 +27,15 @@ class ProfileController extends GetxController {
     }
   }
 
+  getUserDetails1() {
+    final email = authrepo.firebaseuser.value?.email;
+    if (email != null) {
+      return userrepo.getUserDetails1(email);
+    } else {
+      Get.snackbar('Error', 'Login to continue');
+    }
+  }
+
   void userAddress() async {
     Indicator.showLoading();
     final address = UserModel2(

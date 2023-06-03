@@ -68,4 +68,12 @@ class CreateUser {
       });
     }
   }
+
+  Future<UserModel2> getUserDetails1(String email) async {
+    final snapshot =
+        await _db.collection("Users").where("Email", isEqualTo: email).get();
+    final userdata1 =
+        snapshot.docs.map((e) => UserModel2.fromSnapshot(e)).single;
+    return userdata1;
+  }
 }

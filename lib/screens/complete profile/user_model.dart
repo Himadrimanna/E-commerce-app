@@ -64,4 +64,16 @@ class UserModel2 {
           ' $country'
     };
   }
+
+  factory UserModel2.fromSnapshot(
+      DocumentSnapshot<Map<String, dynamic>> document) {
+    final data = document.data()!;
+    return UserModel2(
+        address2: '',
+        address1: data["Address"],
+        city: '',
+        country: '',
+        state: '',
+        zipcode: '');
+  }
 }

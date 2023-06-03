@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.e_cart.app-mergeDebugResources-14:/values-v16/values-v16.xml",
+            "outputFile": "com.example.e_cart.app-mergeDebugResources-25:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\himad\\.gradle\\caches\\transforms-3\\1141b72fb8be4e566e7814849b1aa3a2\\transformed\\core-1.6.0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\himad\\.gradle\\caches\\transforms-3\\6eef1bc1c10a66bf0b89112f82f0178a\\transformed\\core-1.10.1\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

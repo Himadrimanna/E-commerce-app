@@ -1,33 +1,40 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.e_cart.app-mergeDebugResources-14:/values-en-rXC/values-en-rXC.xml",
+            "outputFile": "com.example.e_cart.app-mergeDebugResources-25:/values-en-rXC/values-en-rXC.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\himad\\.gradle\\caches\\transforms-3\\c1463af6cb467bf02a2c891016443d37\\transformed\\browser-1.4.0\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "source": "C:\\Users\\himad\\.gradle\\caches\\transforms-3\\277e28358c4e2ccde656847d46d62678\\transformed\\browser-1.4.0\\res\\values-en-rXC\\values-en-rXC.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
                         "startOffsets": "55,255,454,665",
                         "endColumns": "199,198,210,201",
                         "endOffsets": "250,449,660,862"
+                    },
+                    "to": {
+                        "startLines": "9,10,11,12",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "1482,1682,1881,2092",
+                        "endColumns": "199,198,210,201",
+                        "endOffsets": "1677,1876,2087,2289"
                     }
                 },
                 {
-                    "source": "C:\\Users\\himad\\.gradle\\caches\\transforms-3\\1141b72fb8be4e566e7814849b1aa3a2\\transformed\\core-1.6.0\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "source": "C:\\Users\\himad\\.gradle\\caches\\transforms-3\\6eef1bc1c10a66bf0b89112f82f0178a\\transformed\\core-1.10.1\\res\\values-en-rXC\\values-en-rXC.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "203",
-                        "endOffsets": "254"
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,251,456,657,858,1065,1270,1482",
+                        "endColumns": "195,204,200,200,206,204,211,203",
+                        "endOffsets": "246,451,652,853,1060,1265,1477,1681"
                     },
                     "to": {
-                        "startLines": "6",
-                        "startColumns": "4",
-                        "startOffsets": "867",
-                        "endColumns": "203",
-                        "endOffsets": "1066"
+                        "startLines": "2,3,4,5,6,7,8,13",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,251,456,657,858,1065,1270,2294",
+                        "endColumns": "195,204,200,200,206,204,211,203",
+                        "endOffsets": "246,451,652,853,1060,1265,1477,2493"
                     }
                 }
             ]
